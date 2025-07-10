@@ -53,6 +53,7 @@ export default function Home({
             boxSizing: 'border-box',
             width: '50%',
           }}
+          {...({} as any)}
         >
           <Box
             component="img"
@@ -79,6 +80,7 @@ export default function Home({
             boxSizing: 'border-box',
             width: '50%',
           }}
+          {...({} as any)}
         >
           <Typography
             variant="h4"

@@ -26,7 +26,16 @@ export default function ComputerCardList({ computers }: ComputerCardListProps) {
       sx={{ maxWidth: 1500, mx: 'auto' }}
     >
       {computers.map((comp) => (
-        <Grid item xs={12} sm={6} md={4} key={comp.id} sx={{ display: 'flex' }}>
+        <Grid
+          item
+          xs={12}
+          sm={6}
+          md={4}
+          key={comp.id}
+          sx={{ display: 'flex' }}
+          component="div"
+          {...({} as any)}
+        >
           <Card
             sx={{
               display: 'flex',
